@@ -10,7 +10,7 @@ public class SceneManagement : MonoBehaviour
     public Scene sceneName;
         public enum Scene
     {
-        CharacterCreation, WelcomeScene,FinancialAid, StudentServices,FinancialAidInfo
+        CharacterCreation, WelcomeScene,FinancialAid, StudentServices,FinancialAidInfo, CareerServices, IfKnowDegree
     }
    public void SceneTransition(string sceneName)
     {

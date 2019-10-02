@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/StudentServices.unity
+- path: Assets/Scenes/CareerServices.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
