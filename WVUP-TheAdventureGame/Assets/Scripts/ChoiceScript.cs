@@ -22,7 +22,7 @@ public class ChoiceScript : MonoBehaviour
 
     public void ChoiceOptionYes()
     {
-        TextBox.GetComponent<Text>().text = "Alright, let's head over to the Advising center.";
+        TextBox.GetComponent<Text>().text = "Alright, let's continue on to Student Services, and get started with admissions.";
         ChoiceMade = 1;
         AdmissionsButton.SetActive(true);
     }
@@ -31,7 +31,7 @@ public class ChoiceScript : MonoBehaviour
     public void ChoiceOptionNo()
     {
 
-        TextBox.GetComponent<Text>().text = "Alright, then let's take a stop to the career center!";
+        TextBox.GetComponent<Text>().text = "Alright, then instead, then let's take a stop to the career center!";
         ChoiceMade = 2;
         CareerServicesButton.SetActive(true);
     }

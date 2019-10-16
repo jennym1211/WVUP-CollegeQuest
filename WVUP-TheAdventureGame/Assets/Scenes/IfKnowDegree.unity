@@ -156,8 +156,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 13.9, y: -155.5}
-  m_SizeDelta: {x: 207.5, y: 38.9}
+  m_AnchoredPosition: {x: 3.4, y: -150.1}
+  m_SizeDelta: {x: 368.46, y: 69.07}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &107177077
 MonoBehaviour:
@@ -180,7 +180,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 0.94117653, g: 0.9607844, b: 0.5137255, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 0.827451, b: 0.18431373, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -210,7 +210,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: AdmissionsScene
+          m_StringArgument: StudentServices
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &107177078
@@ -332,7 +332,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -3.800003, y: 0}
+  m_AnchoredPosition: {x: -3.8000183, y: 0}
   m_SizeDelta: {x: -7.7, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &498111311
@@ -354,8 +354,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_Font: {fileID: 12800000, guid: 652f7165b7c30ab46af6c4aad90a639b, type: 2}
+    m_FontSize: 16
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -366,7 +366,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Head Over To Admissions
+  m_Text: Click here to head over to student services!
 --- !u!222 &498111312
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -508,11 +508,11 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_Font: {fileID: 12800000, guid: 652f7165b7c30ab46af6c4aad90a639b, type: 2}
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 2
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -589,7 +589,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 0.9790442, g: 1, b: 0.5330188, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 0.827451, b: 0.18431373, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -735,7 +735,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_TargetDisplay: 0
 --- !u!224 &944616804
 RectTransform:
@@ -926,7 +926,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0.98348534}
-  m_AnchoredPosition: {x: 0, y: -115.66}
+  m_AnchoredPosition: {x: 0, y: -115.660034}
   m_SizeDelta: {x: -260, y: -581.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1031866241
@@ -1000,8 +1000,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 10, y: 92.057}
-  m_SizeDelta: {x: 149.6, y: 254.1}
+  m_AnchoredPosition: {x: 315, y: 51}
+  m_SizeDelta: {x: 166, y: 282}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1193322733
 MonoBehaviour:
@@ -1405,8 +1405,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 23.000015}
-  m_SizeDelta: {x: 551.5, y: 96.8}
+  m_AnchoredPosition: {x: 0, y: 15}
+  m_SizeDelta: {x: 723.4, y: 126.98}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1597980663
 MonoBehaviour:
@@ -1439,7 +1439,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Before we head on our journey, do you know what degree you're pursuing?
+  m_Text: Hold up! Before we head on our journey, do you know what degree you're pursuing?
 --- !u!222 &1597980664
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1504,11 +1504,11 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_Font: {fileID: 12800000, guid: 652f7165b7c30ab46af6c4aad90a639b, type: 2}
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 0
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -1525,47 +1525,84 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1605826744}
   m_CullTransparentMesh: 0
---- !u!1 &1821217298
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1821217300}
-  - component: {fileID: 1821217299}
-  m_Layer: 0
-  m_Name: SceneManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1821217299
+--- !u!114 &1821217299 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 8597111915548439166, guid: c545b1812ddd64a479a32bd483bcfba1,
+    type: 3}
+  m_PrefabInstance: {fileID: 8597111914801619053}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1821217298}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 44291fba7736a794c91813fdefd498d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: 6
---- !u!4 &1821217300
-Transform:
+--- !u!1001 &8597111914801619053
+PrefabInstance:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1821217298}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.78490293, y: 1.0234122, z: 58.290783}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8597111915548439167, guid: c545b1812ddd64a479a32bd483bcfba1,
+        type: 3}
+      propertyPath: m_Name
+      value: SceneManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 8597111915548439161, guid: c545b1812ddd64a479a32bd483bcfba1,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.78490293
+      objectReference: {fileID: 0}
+    - target: {fileID: 8597111915548439161, guid: c545b1812ddd64a479a32bd483bcfba1,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.0234122
+      objectReference: {fileID: 0}
+    - target: {fileID: 8597111915548439161, guid: c545b1812ddd64a479a32bd483bcfba1,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 58.290783
+      objectReference: {fileID: 0}
+    - target: {fileID: 8597111915548439161, guid: c545b1812ddd64a479a32bd483bcfba1,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8597111915548439161, guid: c545b1812ddd64a479a32bd483bcfba1,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8597111915548439161, guid: c545b1812ddd64a479a32bd483bcfba1,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8597111915548439161, guid: c545b1812ddd64a479a32bd483bcfba1,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8597111915548439161, guid: c545b1812ddd64a479a32bd483bcfba1,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8597111915548439161, guid: c545b1812ddd64a479a32bd483bcfba1,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8597111915548439161, guid: c545b1812ddd64a479a32bd483bcfba1,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8597111915548439161, guid: c545b1812ddd64a479a32bd483bcfba1,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c545b1812ddd64a479a32bd483bcfba1, type: 3}
