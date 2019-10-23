@@ -2316,13 +2316,13 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 411349517}
         m_MethodName: OpenURL
-        m_Mode: 1
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: wvup.emsicc.com
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1332313453
@@ -2379,7 +2379,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1412572197
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3760,6 +3760,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KISSystem
       objectReference: {fileID: 0}
+    - target: {fileID: 5004233701947734195, guid: 2b6e626dcf704254bb81ffcf275402b8,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5004233701947734199, guid: 2b6e626dcf704254bb81ffcf275402b8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3993,6 +3998,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: KISCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 2672594532388013678, guid: 2512f71448456c04bb1c5ca559ee37a3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7984750651526169998, guid: 2512f71448456c04bb1c5ca559ee37a3,
+        type: 3}
+      propertyPath: panel
+      value: 
+      objectReference: {fileID: 181841292}
+    - target: {fileID: 7984750651526169998, guid: 2512f71448456c04bb1c5ca559ee37a3,
+        type: 3}
+      propertyPath: closeButton
+      value: 
+      objectReference: {fileID: 1796682046}
     - target: {fileID: 1450422561876797489, guid: 2512f71448456c04bb1c5ca559ee37a3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4113,16 +4133,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: OpenPanel
       objectReference: {fileID: 0}
-    - target: {fileID: 7984750651526169998, guid: 2512f71448456c04bb1c5ca559ee37a3,
-        type: 3}
-      propertyPath: panel
-      value: 
-      objectReference: {fileID: 181841292}
-    - target: {fileID: 7984750651526169998, guid: 2512f71448456c04bb1c5ca559ee37a3,
-        type: 3}
-      propertyPath: closeButton
-      value: 
-      objectReference: {fileID: 1796682046}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2512f71448456c04bb1c5ca559ee37a3, type: 3}
 --- !u!1 &2109304240

@@ -66,8 +66,11 @@
     <Compile Include="Assets\Scripts\AppearanceScripts\ChangeAppearance.cs" />
     <Compile Include="Assets\Scripts\AppearanceScripts\ChangeHairColor.cs" />
     <Compile Include="Assets\Scripts\AppearanceScripts\ChangingColor.cs" />
+    <Compile Include="Assets\Scripts\CheckboxScript.cs" />
     <Compile Include="Assets\Scripts\ChoiceScript.cs" />
+    <Compile Include="Assets\Scripts\DegreeScripts\BAPSScript.cs" />
     <Compile Include="Assets\Scripts\DegreeScripts\EducationDegreeSelection.cs" />
+    <Compile Include="Assets\Scripts\DegreeScripts\HFASSScript.cs" />
     <Compile Include="Assets\Scripts\DegreeScripts\NursingDegreeSelection.cs" />
     <Compile Include="Assets\Scripts\DegreeScripts\STEMDegreeSelection.cs" />
     <Compile Include="Assets\Scripts\Dialog.cs" />

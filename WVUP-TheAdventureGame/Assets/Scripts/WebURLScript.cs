@@ -11,9 +11,9 @@ public class WebURLScript : MonoBehaviour
     }
 
     
-    public void OpenURL()
+    public void OpenURL(string URL)
     {
-        Application.OpenURL("wvup.emsicc.com");
+        Application.OpenURL(URL);
     }
 
     private void Update()
