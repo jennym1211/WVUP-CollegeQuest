@@ -18,11 +18,20 @@ EditorBuildSettings:
     path: Assets/Scenes/IfKnowDegree.unity
     guid: b6fb155025af0694498e955bba37fb6d
   - enabled: 1
-    path: Assets/Scenes/HallwaySceneSelector.unity
-    guid: b8b46876c0c1c264b8199aa8b29d0b82
+    path: Assets/Scenes/StudentServices.unity
+    guid: 907414f19452ff84fadb7b1920ba8c48
   - enabled: 1
     path: Assets/Scenes/CareerServices.unity
     guid: 11fd60b4dcbc152488303dcbf659ff7c
+  - enabled: 1
+    path: Assets/Scenes/FinancialAid.unity
+    guid: 3660ecdf6369ff44099c492a4f715bb7
+  - enabled: 1
+    path: Assets/Scenes/AdmissionsScene.unity
+    guid: f44f66a8f4bf4314aaadc7aeada77db9
+  - enabled: 1
+    path: Assets/Scenes/HallwaySceneSelector.unity
+    guid: b8b46876c0c1c264b8199aa8b29d0b82
   - enabled: 1
     path: Assets/Scenes/AdvisorScene.unity
     guid: 245cec403be47554cac7fa9f7bd3fb90
