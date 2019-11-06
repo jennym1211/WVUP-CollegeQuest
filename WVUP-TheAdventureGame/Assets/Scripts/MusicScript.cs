@@ -21,5 +21,9 @@ public class MusicScript : MonoBehaviour
         _audioSource.Play();
     }
 
-  
+   public void Mute()
+    {
+        AudioListener.pause = !AudioListener.pause;
+
+    }
 }
