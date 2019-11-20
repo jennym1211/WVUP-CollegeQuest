@@ -11,11 +11,32 @@ public class WebURLScript : MonoBehaviour
     }
 
     
-    public void OpenURL(string URL)
+    public void OpenEMSICCURL()
     {
-        Application.OpenURL(URL);
+
+        Application.ExternalEval("window.open('https://wvup.emsicc.com/');");
+
     }
 
+    public void OpenCNURL()
+    {
+
+        Application.ExternalEval("window.open('https://www.collegecentral.com/wvup/');");
+
+    }
+
+
+
+
+    public void OpenLIURL()
+    {
+
+        Application.ExternalEval("window.open('https://www.linkedin.com/');");
+
+    }
+
+
+   
     private void Update()
     {
        
