@@ -422,6 +422,7 @@ RectTransform:
   - {fileID: 1827439267}
   - {fileID: 1267655237}
   - {fileID: 778295101}
+  - {fileID: 1866044039}
   m_Father: {fileID: 1412572200}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -579,7 +580,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 95.687004, y: -108.59801}
+  m_AnchoredPosition: {x: 94.772, y: -94.8}
   m_SizeDelta: {x: 216.83, y: 29.53}
   m_Pivot: {x: 0.91028404, y: 0.5}
 --- !u!114 &282512781
@@ -1310,18 +1311,17 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
-    m_Alignment: 1
+    m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Career Services can help undecided students explore careers while providing
-    important occupational information to help define career goals.\n\nThe first step
-    is to explore- Choose your major and talk to your advisor to schedule classes!\r
-    Not sure which major to go with?\nExplore Career Coach \u2013 Discover in-demand
-    careers and education paths based on your interests at \n\n\n,where you can take
-    a quiz to decide which degree is best for you.\n\n"
+  m_Text: "                                The first step is to explore:\n\n-  Choose
+    your major and talk to your advisor to schedule classes!\r \n- Not sure which
+    major to go with?\n        - Explore Career Coach \u2013 Discover in-demand careers\n\t\t
+    and education paths based on your interests at \n\n\n\nThere, you can take a quiz
+    to decide which degree is best for you.\n\n"
 --- !u!222 &412574333
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1681,10 +1681,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "   Step three is....EARN! \n Use what you have learned and land THE JOB!\r\n\n\u2022College
-    Central Network \u2013 View for job opportunities posted exclusively for WVU Parkersburg
+  m_Text: "Step three is EARN! \n Use what you have learned, and land THE JOB!\r\n\n\u2022College
+    Central Network \u2013 View job opportunities posted exclusively for WVU Parkersburg
     at \n\n\n\u2022LinkedIn \u2013 Access the largest professional networking site
-    available at linkedin.com\r\n"
+    available at\r\n"
 --- !u!222 &463408749
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2982,7 +2982,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 71.7, y: -50.5}
+  m_AnchoredPosition: {x: 91.392, y: -19.3}
   m_SizeDelta: {x: 216.83, y: 29.53}
   m_Pivot: {x: 0.91028404, y: 0.5}
 --- !u!114 &1332313452
@@ -3882,8 +3882,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -55.6, y: 264.3}
-  m_SizeDelta: {x: 841.1, y: 157.7}
+  m_AnchoredPosition: {x: 0, y: 273.24997}
+  m_SizeDelta: {x: 995.3, y: 190.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1823023796
 MonoBehaviour:
@@ -3916,8 +3916,12 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'There are three steps that you will take on during your progress at college
-    to be able to land the job you want. They are: Explore, Prepare, and Earn.'
+  m_Text: 'Career Services can help undecided students explore careers while providing
+    important occupational information to help define career goals.
+
+
+    There are three steps that you will take on during your progress at college to
+    be able to land the job you want. They are: Explore, Prepare, and Earn.'
 --- !u!222 &1823023797
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3994,10 +3998,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Step two is to prepare \u2013 Meet with the career center about cooperative
-    education, internships, or other work experience.\r\n\n\n\u2022 Career Coach \u2013
-    Get started with an easy-to-use resume builder at wvup.emsicc.com\r\n\u2022 College
-    Center Network \u2013 Access career advice podcasts, articles, and videos at \n"
+  m_Text: "Step two is to prepare!\n- Meet with the career center about cooperative
+    education, internships, or other work experience.\r\n\nother resources include:
+    \n\u2022 Career Coach \u2013 Get started with an easy-to-use resume builder at
+    \                         \n\u2022 College Center Network \u2013 Access career
+    advice podcasts, articles, and videos at \n"
 --- !u!222 &1827439269
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4050,6 +4055,135 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1866044038
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1866044039}
+  - component: {fileID: 1866044042}
+  - component: {fileID: 1866044041}
+  - component: {fileID: 1866044040}
+  m_Layer: 5
+  m_Name: emsiccbutton
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1866044039
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1866044038}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1960763913}
+  m_Father: {fileID: 200419945}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 160.8, y: -27.2}
+  m_SizeDelta: {x: 216.83, y: 29.53}
+  m_Pivot: {x: 0.91028404, y: 0.5}
+--- !u!114 &1866044040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1866044038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.21782663, g: 0.2240732, b: 0.8396226, a: 0.8745098}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1866044041}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 411349517}
+        m_MethodName: OpenEMSICCURL
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: wvup.emsicc.com
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1866044041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1866044038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.3915094, g: 0.5895828, b: 1, a: 0.4745098}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1866044042
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1866044038}
+  m_CullTransparentMesh: 0
 --- !u!1 &1907207873
 GameObject:
   m_ObjectHideFlags: 0
@@ -4296,6 +4430,83 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speechBubble: {fileID: 2035693561}
+--- !u!1 &1960763912
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1960763913}
+  - component: {fileID: 1960763915}
+  - component: {fileID: 1960763914}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1960763913
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1960763912}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1866044039}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0.0000009536743}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1960763914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1960763912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 652f7165b7c30ab46af6c4aad90a639b, type: 2}
+    m_FontSize: 16
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "wvup.emsicc.com\r"
+--- !u!222 &1960763915
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1960763912}
+  m_CullTransparentMesh: 0
 --- !u!1 &1974948914
 GameObject:
   m_ObjectHideFlags: 0

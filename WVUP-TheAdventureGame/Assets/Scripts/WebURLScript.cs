@@ -36,7 +36,30 @@ public class WebURLScript : MonoBehaviour
     }
 
 
+    public void OpenFAFSAURL()
+    {
+
+        Application.ExternalEval("window.open('https://studentaid.ed.gov/sa/fafsa');");
+
+    }
+
+
+    public void OpenOLSISURL()
+    {
+
+        Application.ExternalEval("window.open('https://rand.wvnet.edu:9920/WVUPPROD/twbkwbis.P_GenMenu?name=homepage');");
+
+    }
+
+    public void OpenTranscriptURL()
+    {
+
+        Application.ExternalEval("window.open(' https://www.wvup.edu/future-students/admissions/admissions-requirements/');");
+
+    }
+
    
+
     private void Update()
     {
        
