@@ -96,6 +96,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
+    m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -210,7 +211,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: StudentServices
+          m_StringArgument: InsideHallway1
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &107177078
@@ -1737,7 +1738,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Hold up! Before we head on our journey, do you know what degree you're pursuing?
+  m_Text: Hold up! Before we head on our journey, do you know what degree you're
+    pursuing?
 --- !u!222 &1597980664
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1842,11 +1844,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 8597111915548439167, guid: c545b1812ddd64a479a32bd483bcfba1,
-        type: 3}
-      propertyPath: m_Name
-      value: SceneManager
-      objectReference: {fileID: 0}
     - target: {fileID: 8597111915548439161, guid: c545b1812ddd64a479a32bd483bcfba1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1901,6 +1898,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8597111915548439167, guid: c545b1812ddd64a479a32bd483bcfba1,
+        type: 3}
+      propertyPath: m_Name
+      value: SceneManager
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c545b1812ddd64a479a32bd483bcfba1, type: 3}

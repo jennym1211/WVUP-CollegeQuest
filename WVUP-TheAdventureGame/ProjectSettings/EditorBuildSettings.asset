@@ -39,6 +39,24 @@ EditorBuildSettings:
     path: Assets/Scenes/BusinessOfficeScene.unity
     guid: d4b0d14010e64634fa43f5d757556d63
   - enabled: 1
+    path: Assets/Scenes/Hallway4.unity
+    guid: 2eceb20e7cd42e34bad0e393d3d66e96
+  - enabled: 1
+    path: Assets/Scenes/HallwayPreStudentLounge.unity
+    guid: f5c094daa6d154f4290de2cda04d3c3a
+  - enabled: 1
+    path: Assets/Scenes/HallwayScene2.unity
+    guid: 6b78f6ca041f3084bb80de004cc7b11c
+  - enabled: 1
+    path: Assets/Scenes/HallwayTutorCenter.unity
+    guid: d011262c5a869d14da83f1df53c5e37b
+  - enabled: 1
+    path: Assets/Scenes/InsideHallway1.unity
+    guid: 05b7a502d5d39de46bf7b101e4cf784e
+  - enabled: 1
+    path: Assets/Scenes/StudentLounge.unity
+    guid: 0025c223ff30f1446b78f7037eeb87ca
+  - enabled: 1
     path: Assets/Scenes/MainBuilding.unity
     guid: ad1b078216d0668489f419bc8dbbe54e
   - enabled: 1
