@@ -9,10 +9,17 @@ public class MusicScript : MonoBehaviour
 
     public AudioSource _audioSource;
     public Button MusicToggle;
+    static MusicScript instance = null;
     private void Awake()
     {
-        DontDestroyOnLoad(transform.gameObject);
-        _audioSource = GetComponent<AudioSource>();
+        if (instance != null)
+            Destroy(gameObject);
+        else
+        {
+            instance = this;
+            DontDestroyOnLoad(transform.gameObject);
+            _audioSource = GetComponent<AudioSource>();
+        }
     }
 
     public void PlayMusic()

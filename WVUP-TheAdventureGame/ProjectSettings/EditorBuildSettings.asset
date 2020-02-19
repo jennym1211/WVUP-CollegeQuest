@@ -39,6 +39,9 @@ EditorBuildSettings:
     path: Assets/Scenes/BusinessOfficeScene.unity
     guid: d4b0d14010e64634fa43f5d757556d63
   - enabled: 1
+    path: Assets/Scenes/HistoryScene.unity
+    guid: 5fdee5d29269bb445b255482e5fea0fd
+  - enabled: 1
     path: Assets/Scenes/Hallway4.unity
     guid: 2eceb20e7cd42e34bad0e393d3d66e96
   - enabled: 1

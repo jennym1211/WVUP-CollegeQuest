@@ -66,6 +66,7 @@
     <Compile Include="Assets\Scripts\AppearanceScripts\ChangeAppearance.cs" />
     <Compile Include="Assets\Scripts\AppearanceScripts\ChangeHairColor.cs" />
     <Compile Include="Assets\Scripts\AppearanceScripts\ChangingColor.cs" />
+    <Compile Include="Assets\Scripts\CameraScript.cs" />
     <Compile Include="Assets\Scripts\CheckboxScript.cs" />
     <Compile Include="Assets\Scripts\ChoiceScript.cs" />
     <Compile Include="Assets\Scripts\DegreeScripts\BAPSScript.cs" />

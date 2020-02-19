@@ -58,7 +58,23 @@ public class WebURLScript : MonoBehaviour
 
     }
 
-   
+    public void OpenApplicationURL()
+    {
+
+        Application.ExternalEval("window.open('https://rand.wvnet.edu:9920/WVUPPROD/bwskalog.P_DispChoicesStu');");
+
+    }
+
+    public void OpenHistoryURL()
+    {
+
+        Application.ExternalEval("window.open('https://www.wvup.edu/about/history/');");
+
+    }
+
+
+
+
 
     private void Update()
     {
