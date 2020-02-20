@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 public class SceneTrigger : MonoBehaviour
 {
     public string level;
+    
+    Transform startPos;
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
@@ -14,4 +16,6 @@ public class SceneTrigger : MonoBehaviour
             SceneManager.LoadScene(level);
         }
     }
+
+   
 }

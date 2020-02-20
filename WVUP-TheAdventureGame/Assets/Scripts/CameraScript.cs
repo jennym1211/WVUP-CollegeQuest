@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CameraScript : MonoBehaviour
 {
-     GameObject player = GameObject.FindWithTag("Player");
+    GameObject player;
      Transform followObject;
    
     private Vector3 moveTemp;
@@ -12,14 +12,16 @@ public class CameraScript : MonoBehaviour
     public float offsetX = 2;
     void Start()
     {
-        followObject = player.transform;
-        moveTemp = followObject.transform.position;
+        player = GameObject.FindWithTag("Player");
+       
     }
 
     // Update is called once per frame
     void Update()
     {
+        followObject = player.transform;
         moveTemp = followObject.transform.position;
+       
         moveTemp.y += offsetY;
         moveTemp.x += offsetX;
         moveTemp.z = transform.position.z;

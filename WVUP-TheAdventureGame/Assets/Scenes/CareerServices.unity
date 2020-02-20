@@ -1032,7 +1032,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 179b33149d20bd14296cfce829c2dc68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  level: Hallway4
+  level: InsideHallway
 --- !u!61 &339037952
 BoxCollider2D:
   m_ObjectHideFlags: 0

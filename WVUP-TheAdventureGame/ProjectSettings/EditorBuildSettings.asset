@@ -54,7 +54,7 @@ EditorBuildSettings:
     path: Assets/Scenes/HallwayTutorCenter.unity
     guid: d011262c5a869d14da83f1df53c5e37b
   - enabled: 1
-    path: Assets/Scenes/InsideHallway1.unity
+    path: Assets/Scenes/InsideHallway.unity
     guid: 05b7a502d5d39de46bf7b101e4cf784e
   - enabled: 1
     path: Assets/Scenes/StudentLounge.unity
