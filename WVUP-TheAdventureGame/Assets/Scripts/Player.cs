@@ -8,9 +8,10 @@ public class Player : MonoBehaviour
     public static Player instance;
     public float speed;
     GameObject player;
-
+    Animator anim;
+    GameObject legs;
     private Vector3 newPos = new Vector3(0, 0, 0);
-
+  
     private Rigidbody2D rb;
     private Vector2 moveVelocity;
 
@@ -31,6 +32,7 @@ public class Player : MonoBehaviour
     
     void Start()
     {
+        anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
        
 
@@ -41,8 +43,15 @@ public class Player : MonoBehaviour
     {
         Vector2 moveInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
         moveVelocity = moveInput.normalized * speed;
-       // setPosition();
-      
+        
+        if (moveInput.x!= 0 || moveInput.y !=0)
+        {
+            anim.SetBool("isWalking", true);
+        }
+        else
+        {
+            anim.SetBool("isWalking", false);
+        }
 
     }
 
