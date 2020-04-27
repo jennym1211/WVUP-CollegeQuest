@@ -2,18 +2,43 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System;
+using UnityEngine.UI;
 
+
+[Serializable]
 public class Player : MonoBehaviour
 {
     public static Player instance;
     public float speed;
-    GameObject player;
     Animator anim;
     public SpriteRenderer legs;
-    private Vector3 newPos = new Vector3(0, 0, 0);
-  
-    private Rigidbody2D rb;
+    public GameObject dialogPanel;
+    public Rigidbody2D rb;
     private Vector2 moveVelocity;
+
+    public String Level
+
+    {
+        get;
+
+        set;
+    }
+
+    public string Name
+    {
+        get;
+
+       set;
+
+    }
+
+    public String Major
+    {
+        get;
+        set;
+
+    }
 
    void Awake()
     {
@@ -26,7 +51,8 @@ public class Player : MonoBehaviour
         {
             Destroy(this);
         }
-        setPosition();
+     
+        
     }
 
     
@@ -34,18 +60,23 @@ public class Player : MonoBehaviour
     {
         anim = legs.GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
-       
 
+        Major = "Undecided";
+        Level = "Prospective Student";
 
+     
     }
+
+
 
     private void Update()
     {
+        CheckScene();
         Vector2 moveInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
         moveVelocity = moveInput.normalized * speed;
-      //  float moveInputfloat = Input.GetAxisRaw("Horizontal");
-
-        if (moveInput.x != 0|| moveInput.y !=0)
+        //  float moveInputfloat = Input.GetAxisRaw("Horizontal");
+        
+        if (moveInput.x != 0 || moveInput.y != 0)
         {
             anim.SetBool("isWalking", true);
         }
@@ -54,28 +85,49 @@ public class Player : MonoBehaviour
             anim.SetBool("isWalking", false);
         }
 
-    }
+       
 
-    void FixedUpdate()
-    {
-        rb.MovePosition(rb.position + moveVelocity * Time.fixedDeltaTime);
-        
+       
     }
 
 
-    public void setPosition()
+    public void CheckScene()
     {
-        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("CareerServices"))
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("KISScene"))
         {
+            rb.velocity = Vector2.zero;
+            anim.SetBool("isWalking", false);
+        }
+      
+        else if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("CharacterCreation"))
+        {
+            rb.velocity = Vector2.zero;
+            anim.SetBool("isWalking", false);
+        }
+        else
+            rb.MovePosition(rb.position + moveVelocity * Time.fixedDeltaTime);
+    }
 
-            player = GameObject.FindWithTag("Player");
-            player.transform.position = newPos;
-           
+    public void FreezePlayer()
+    {
+        
 
-
-
+        dialogPanel = GameObject.FindWithTag("DialogPanel");
+        if (dialogPanel.activeInHierarchy == true)
+        {
+            rb.velocity = Vector2.zero;
+            anim.SetBool("isWalking", false);
+        }
+        else
+        {
+            rb.MovePosition(rb.position + moveVelocity * Time.fixedDeltaTime);
         }
 
     }
+
+
+
+
+
 
 }

@@ -12,13 +12,13 @@ public class Dialog : MonoBehaviour
     public float typingSpeed;
     public SpriteRenderer headShot;
     public GameObject continueButton;
-
-
+    public GameObject dialogPanel;
+ 
 
 
     private void Update()
     {
-        if(textDisplay.text == sentences[index])
+        if (textDisplay.text == sentences[index])
         {
             continueButton.SetActive(true);
         }
@@ -27,11 +27,11 @@ public class Dialog : MonoBehaviour
     {
         continueButton.SetActive(false);
         StartCoroutine(Type());
-        
+
     }
     IEnumerator Type()
     {
-        foreach(char letter in sentences[index].ToCharArray())
+        foreach (char letter in sentences[index].ToCharArray())
         {
             textDisplay.text += letter;
             yield return new WaitForSeconds(typingSpeed);
@@ -52,6 +52,11 @@ public class Dialog : MonoBehaviour
             textDisplay.text = "";
             headShot.enabled = false;
             continueButton.SetActive(false);
+            dialogPanel.SetActive(false);
         }
     }
+
+
 }
+
+

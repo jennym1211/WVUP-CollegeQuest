@@ -1,32 +1,32 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class KISScript : MonoBehaviour
 {
-
-
-    public GameObject KISPanel;
+    public Text levelText;
+    public Text majorText;
+    public Text nameText;
+    private Player player;
+   
+    
    
     
     // Start is called before the first frame update
     
      public void Start()
     {
-        KISPanel.SetActive(false);
-    }
-        
-    public void OpenKISPanel()
-    {
+        player = FindObjectOfType<Player>();
+        nameText.text = player.Name;
+        levelText.text = player.Level;
+        majorText.text = player.Major;
 
-        KISPanel.SetActive(true);
-        
+        player.transform.localScale = new Vector2(1.5f, 1.5f);
+        player.transform.position = new Vector2(-.35f, 3.3f);
+       
     }
 
-    // Update is called once per frame
-    public void CloseKISPanel()
-    {
-        KISPanel.SetActive(false);
-        
-    }
+
+ 
 }
