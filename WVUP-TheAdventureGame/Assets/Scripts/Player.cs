@@ -16,27 +16,31 @@ public class Player : MonoBehaviour
     public GameObject dialogPanel;
     public Rigidbody2D rb;
     private Vector2 moveVelocity;
+    private const string level = "Level";
 
-    public String Level
-
+    public string Level
     {
-        get;
-
-        set;
+        get { return PlayerPrefs.GetString(level); }
+        set { PlayerPrefs.SetString(level, value); }
     }
 
+    private const string name = "Name";
     public string Name
     {
-        get;
+        get { return PlayerPrefs.GetString(name); }
 
-       set;
+        set { PlayerPrefs.SetString(name, value); }
 
     }
 
+    private const string major = "Major";
     public String Major
     {
-        get;
-        set;
+        get { return PlayerPrefs.GetString(major); }
+
+    
+        set { PlayerPrefs.SetString(major, value); }
+
 
     }
 
@@ -125,9 +129,21 @@ public class Player : MonoBehaviour
 
     }
 
+    public void Save(int SaveSlot)
+    {
+        PlayerPrefs.SetString("SaveSlot_" + SaveSlot.ToString() + "_" + name, Name);
+        PlayerPrefs.SetString("SaveSlot_" + SaveSlot.ToString() + "_" + level, Level);
+        PlayerPrefs.SetString("SaveSlot_" + SaveSlot.ToString() + "_" + major, Major);
 
+    }
 
+    public void Load(int SaveSlot)
+    {
+        Name = PlayerPrefs.GetString("SaveSlot_" + SaveSlot.ToString() + "_" + name, Name);
+        Level = PlayerPrefs.GetString("SaveSlot_" + SaveSlot.ToString() + "_" + level, Level);
+        Major = PlayerPrefs.GetString("SaveSlot_" + SaveSlot.ToString() + "_" + major, Major);
 
+    }
 
 
 }
