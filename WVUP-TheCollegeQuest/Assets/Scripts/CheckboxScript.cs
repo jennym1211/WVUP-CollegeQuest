@@ -16,6 +16,7 @@ public class CheckboxScript : MonoBehaviour
     void Start()
     {
         ContinueButton.SetActive(false);
+        Debug.Log("Continue button inactive.");
     }
 
     void Update()
@@ -23,9 +24,11 @@ public class CheckboxScript : MonoBehaviour
         if (FAFSAToggle.isOn == true && OLSISToggle.isOn == true && TranscriptToggle.isOn == true)
         {
             ContinueButton.SetActive(true);
+            Debug.Log("Continue button active.");
         }
         else
             ContinueButton.SetActive(false);
+             Debug.Log("Continue button inactive.");
     }
 
     // Update is called once per frame

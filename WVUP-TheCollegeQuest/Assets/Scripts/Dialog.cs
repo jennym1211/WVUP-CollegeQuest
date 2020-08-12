@@ -21,11 +21,13 @@ public class Dialog : MonoBehaviour
         if (textDisplay.text == sentences[index])
         {
             continueButton.SetActive(true);
+            Debug.Log("Continue button active.");
         }
     }
     void Start()
     {
         continueButton.SetActive(false);
+        Debug.Log("Continue button inactive.");
         StartCoroutine(Type());
 
     }

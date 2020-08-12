@@ -21,7 +21,9 @@ public class Player : MonoBehaviour
     public string Level
     {
         get { return PlayerPrefs.GetString(level); }
-        set { PlayerPrefs.SetString(level, value); }
+        set { PlayerPrefs.SetString(level, value);
+            Debug.Log("Player level set.");
+        }
     }
 
     private const string name = "Name";
@@ -29,7 +31,9 @@ public class Player : MonoBehaviour
     {
         get { return PlayerPrefs.GetString(name); }
 
-        set { PlayerPrefs.SetString(name, value); }
+        set { PlayerPrefs.SetString(name, value);
+            Debug.Log("Player name set.");
+        }
 
     }
 
@@ -39,7 +43,9 @@ public class Player : MonoBehaviour
         get { return PlayerPrefs.GetString(major); }
 
     
-        set { PlayerPrefs.SetString(major, value); }
+        set { PlayerPrefs.SetString(major, value);
+            Debug.Log("Player major set.");
+        }
 
 
     }
@@ -83,10 +89,12 @@ public class Player : MonoBehaviour
         if (moveInput.x != 0 || moveInput.y != 0)
         {
             anim.SetBool("isWalking", true);
+            Debug.Log("Player walking.");
         }
         else
         {
             anim.SetBool("isWalking", false);
+            Debug.Log("Player stopped walking.");
         }
 
        
@@ -134,6 +142,7 @@ public class Player : MonoBehaviour
         PlayerPrefs.SetString("SaveSlot_" + SaveSlot.ToString() + "_" + name, Name);
         PlayerPrefs.SetString("SaveSlot_" + SaveSlot.ToString() + "_" + level, Level);
         PlayerPrefs.SetString("SaveSlot_" + SaveSlot.ToString() + "_" + major, Major);
+        Debug.Log("Player information saved.");
 
     }
 
@@ -142,7 +151,7 @@ public class Player : MonoBehaviour
         Name = PlayerPrefs.GetString("SaveSlot_" + SaveSlot.ToString() + "_" + name, Name);
         Level = PlayerPrefs.GetString("SaveSlot_" + SaveSlot.ToString() + "_" + level, Level);
         Major = PlayerPrefs.GetString("SaveSlot_" + SaveSlot.ToString() + "_" + major, Major);
-
+        Debug.Log("Player information loaded.");
     }
 
 
