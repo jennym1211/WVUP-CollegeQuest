@@ -5,6 +5,7 @@ using UnityEngine;
 public class ShowSpeechBubble : MonoBehaviour
 {
     public GameObject speechBubble;
+    public SpriteRenderer sprite;
     
     void Start()
     {
@@ -13,6 +14,11 @@ public class ShowSpeechBubble : MonoBehaviour
     }
 
     public void OnMouseOver()
+    {
+        speechBubble.SetActive(true);
+    }
+
+    private void OnMouseEnter()
     {
         speechBubble.SetActive(true);
     }

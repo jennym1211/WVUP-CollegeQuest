@@ -85,6 +85,15 @@ public class SceneManagement : MonoBehaviour
             Debug.Log("Entering Welcome Scene, setting position.");
             player.transform.position = new Vector2(3.3f, .69f);
         }
+
+        else if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("BusinessOffice"))
+        {
+
+            Debug.Log("Entering Business Office, setting position.");
+            player.transform.position = new Vector2(-0.453f, .69f);
+        }
+
+
         else
         {
             Debug.Log("Default scene position coordinates, setting position.");

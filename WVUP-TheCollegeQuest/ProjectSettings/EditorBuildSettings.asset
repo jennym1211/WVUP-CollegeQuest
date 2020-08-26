@@ -24,7 +24,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Outside.unity
     guid: 7c7f70a3a6d0ed74fbb8707b44249054
   - enabled: 1
-    path: Assets/Scenes/BusinessOfficeScene.unity
+    path: Assets/Scenes/BusinessOffice.unity
     guid: d4b0d14010e64634fa43f5d757556d63
   - enabled: 1
     path: Assets/Scenes/CapertonScene.unity
