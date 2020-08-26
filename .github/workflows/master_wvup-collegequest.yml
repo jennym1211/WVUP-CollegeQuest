@@ -1,35 +1,18 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
-
-name: Build and deploy ASP.Net Core app to Azure Web App - wvup-collegequest
-
-on:
-  push:
-    branches:
-      - master
-
+name: Deploy via ftp
+on: push
 jobs:
-  build-and-deploy:
+  deploy:
+    name: Deploy
     runs-on: windows-latest
-
     steps:
-    - uses: actions/checkout@master
-
-    - name: Set up .NET Core
-      uses: actions/setup-dotnet@v1
+    - uses: actions/checkout@v2
+    - name: Upload ftp
+      uses: sebastianpopp/ftp-action@releases/v2
       with:
-        dotnet-version: '3.1.102'
-
-    - name: Build with dotnet
-      run: dotnet build --configuration Release
-
-    - name: dotnet publish
-      run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/myapp
-
-    - name: Deploy to Azure Web App
-      uses: azure/webapps-deploy@v2
-      with:
-        app-name: 'wvup-collegequest'
-        slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_76e82cdddd504163871a03920d5de035 }}
-        package: ${{env.DOTNET_ROOT}}/myapp 
+        host: ${{ secrets.WVUP-CollegeQuest\$WVUP-CollegeQuest@waws-prod-blu-165.ftp.azurewebsites.windows.net }}
+        user: ${{ secrets.WVUP-CollegeQuest\$WVUP-CollegeQuest}}
+        password: ${{ secrets.KdEfknzK2MaTbvMMA9kqAvroWdqW70XHd9Hlpw5LkbSX7Sjo96x8zfWA1TL0}}
+        localDir: "E:\Jennifer\Documents\GitHub\WVUP-CollegeQuest\WVUP-TheCollegeQuest\Build"
+        remoteDir: "ftp://waws-prod-blu-165dr.ftp.azurewebsites.windows.net/site/wwwroot"
