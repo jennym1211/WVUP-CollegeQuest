@@ -93,6 +93,12 @@ public class SceneManagement : MonoBehaviour
             player.transform.position = new Vector2(-0.453f, .69f);
         }
 
+        else if(SceneManager.GetActiveScene() == SceneManager.GetSceneByName("MainMenu"))
+        {
+            Destroy(player); //make sure this d
+        }
+
+
 
         else
         {

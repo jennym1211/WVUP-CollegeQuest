@@ -52,11 +52,15 @@ public class Player : MonoBehaviour
 
    void Awake()
     {
+
+       
+
         if(instance == null)
         {
             instance = this;
             DontDestroyOnLoad(this);
         }
+      
         else
         {
             Destroy(this);
@@ -97,9 +101,7 @@ public class Player : MonoBehaviour
             Debug.Log("Player stopped walking.");
         }
 
-       
 
-       
     }
 
 
@@ -116,8 +118,13 @@ public class Player : MonoBehaviour
             rb.velocity = Vector2.zero;
             anim.SetBool("isWalking", false);
         }
+      
         else
             rb.MovePosition(rb.position + moveVelocity * Time.fixedDeltaTime);
+
+
+
+       
     }
 
     public void FreezePlayer()
