@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class ChangeAppearance : MonoBehaviour
 {
     // Start is called before the first frame update
-    public GameObject panel;
+    //public GameObject panel;
     public SpriteRenderer part;
     public Sprite[] options;
    

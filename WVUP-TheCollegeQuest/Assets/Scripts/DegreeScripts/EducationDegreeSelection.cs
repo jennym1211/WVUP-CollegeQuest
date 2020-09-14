@@ -18,15 +18,6 @@ public class EducationDegreeSelection : MonoBehaviour
             case 0:
                 InfoText.GetComponent<Text>().text = EduText;
                 break;
-            case 1:
-                InfoText.GetComponent<Text>().text = FillerText;
-                break;
-            case 2:
-                InfoText.GetComponent<Text>().text = FillerText;
-                break;
-            case 3:
-                InfoText.GetComponent<Text>().text = FillerText;
-                break;
             
         }
     }
