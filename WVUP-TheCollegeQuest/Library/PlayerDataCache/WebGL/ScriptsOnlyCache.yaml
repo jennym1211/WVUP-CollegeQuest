@@ -3,8 +3,7 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - CameraScript
     - ChangeAppearance
-    - ChangeHairColor
-    - ChangingColor
+    - ChangePartColor
     - CheckboxScript
     - ChoiceScript
     - Dialog
@@ -23,8 +22,6 @@ ScriptsOnlyBuild:
     - SceneTrigger
     - ShowSpeechBubble
     - WebURLScript
-    Unity.2D.Sprite.Editor.dll:
-    - UnityEditor.U2D.Sprites.SpriteEditorWindow
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
     - UnityEditor.Tilemaps.SceneViewGridManager
@@ -102,7 +99,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13620}
     - Class: 114
-      Script: {instanceID: 14064}
+      Script: {instanceID: 14062}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -177,13 +174,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13620}
     - Class: 114
-      Script: {instanceID: 13740}
+      Script: {instanceID: 13738}
     - Class: 114
-      Script: {instanceID: 13984}
+      Script: {instanceID: 13982}
     - Class: 114
-      Script: {instanceID: 14048}
+      Script: {instanceID: 14046}
     - Class: 114
-      Script: {instanceID: 14064}
+      Script: {instanceID: 14062}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -248,9 +245,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13620}
     - Class: 114
-      Script: {instanceID: 14064}
+      Script: {instanceID: 14062}
     - Class: 114
-      Script: {instanceID: 14076}
+      Script: {instanceID: 14074}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -309,9 +306,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13620}
     - Class: 114
-      Script: {instanceID: 14064}
+      Script: {instanceID: 14062}
     - Class: 114
-      Script: {instanceID: 14076}
+      Script: {instanceID: 14074}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -372,7 +369,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13620}
     - Class: 114
-      Script: {instanceID: 14064}
+      Script: {instanceID: 14062}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -449,11 +446,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13620}
     - Class: 114
-      Script: {instanceID: 13724}
+      Script: {instanceID: 13918}
     - Class: 114
-      Script: {instanceID: 13920}
-    - Class: 114
-      Script: {instanceID: 14064}
+      Script: {instanceID: 14062}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -508,7 +503,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13620}
     - Class: 114
-      Script: {instanceID: 14064}
+      Script: {instanceID: 14062}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -567,9 +562,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13620}
     - Class: 114
-      Script: {instanceID: 14064}
+      Script: {instanceID: 14062}
     - Class: 114
-      Script: {instanceID: 14076}
+      Script: {instanceID: 14074}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -620,7 +615,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13620}
     - Class: 114
-      Script: {instanceID: 14064}
+      Script: {instanceID: 14062}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -681,7 +676,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13620}
     - Class: 114
-      Script: {instanceID: 14064}
+      Script: {instanceID: 14062}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -752,7 +747,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13620}
     - Class: 114
-      Script: {instanceID: 14064}
+      Script: {instanceID: 14062}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -821,9 +816,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13716}
     - Class: 114
-      Script: {instanceID: 13868}
+      Script: {instanceID: 13866}
     - Class: 114
-      Script: {instanceID: 14064}
+      Script: {instanceID: 14062}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -894,11 +889,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13620}
     - Class: 114
-      Script: {instanceID: 13780}
+      Script: {instanceID: 13778}
     - Class: 114
-      Script: {instanceID: 13820}
+      Script: {instanceID: 13818}
     - Class: 114
-      Script: {instanceID: 14064}
+      Script: {instanceID: 14062}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -963,7 +958,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13620}
     - Class: 114
-      Script: {instanceID: 14064}
+      Script: {instanceID: 14062}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1038,7 +1033,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13620}
     - Class: 114
-      Script: {instanceID: 14064}
+      Script: {instanceID: 14062}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1089,7 +1084,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12510}
     - Class: 114
-      Script: {instanceID: 14064}
+      Script: {instanceID: 14062}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -1154,9 +1149,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13620}
     - Class: 114
-      Script: {instanceID: 14064}
+      Script: {instanceID: 14062}
     - Class: 114
-      Script: {instanceID: 14076}
+      Script: {instanceID: 14074}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1342,13 +1337,13 @@ ScriptsOnlyBuild:
     className: PhysicsRaycaster
   - hash:
       serializedVersion: 2
-      Hash: 94902362388f62f3d8ac741de667fee2
+      Hash: 666b13be33982f99249348c5683ca17e
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ChangeAppearance
   - hash:
       serializedVersion: 2
-      Hash: 7934a46ff5994f38be3a12eff71cc896
+      Hash: 6b1f07a6c28887e1d40c73c6fd1b57e7
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Player
@@ -1498,10 +1493,10 @@ ScriptsOnlyBuild:
     className: RemoteTestResultSender
   - hash:
       serializedVersion: 2
-      Hash: 13bec446224e5a0dba7df7b00d724330
+      Hash: f8a9187af0dd365d8e95d942d0ada02c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: ChangeHairColor
+    className: ChangePartColor
   - hash:
       serializedVersion: 2
       Hash: 4fd8bf02e3089425d3502e26c44ba31a
@@ -1630,12 +1625,6 @@ ScriptsOnlyBuild:
     className: GameUtilities
   - hash:
       serializedVersion: 2
-      Hash: 427f875745145f5e3f0b50799a79493d
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ChangingColor
-  - hash:
-      serializedVersion: 2
       Hash: ecc6dcc61d7da0767a5f992163089f4b
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -1660,7 +1649,7 @@ ScriptsOnlyBuild:
     className: TMP_StyleSheet
   - hash:
       serializedVersion: 2
-      Hash: 802ec0bcdec8559f4cbf1b2d1177c6a2
+      Hash: 40d8b6f27d9f22a79e09fdc2ee76fa27
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: KISScript
