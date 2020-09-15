@@ -1,20 +1,38 @@
 on: push
-name: Publish Website
+name: Build and Publish Front End Framework Website
 jobs:
   FTP-Deploy-Action:
     name: FTP-Deploy-Action
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2.1.0
+    - uses: actions/checkout@master
       with:
         fetch-depth: 2
+
+        
+    - name: List output files
+      run: ls
+      
     - name: FTP-Deploy-Action
-      uses: SamKirkland/FTP-Deploy-Action@3.1.1
+      uses: SamKirkland/FTP-Deploy-Action@3.0.0
       with:
         ftp-server: ftp://waws-prod-blu-165dr.ftp.azurewebsites.windows.net/site/wwwroot
         ftp-username: WVUP-CollegeQuest\$WVUP-CollegeQuest
-        ftp-password: ${{secrets.KdEfknzK2MaTbvMMA9kqAvroWdqW70XHd9Hlpw5LkbSX7Sjo96x8zfWA1TL0 }}
-	local-dir: 
-- Build/Build/
-- Build/TemplateData/
-- Build/index.html
+        ftp-password: ${{ secrets.KdEfknzK2MaTbvMMA9kqAvroWdqW70XHd9Hlpw5LkbSX7Sjo96x8zfWA1TL0 }}
+        local-dir: Build/Build/
+
+    - name: FTP-Deploy-TemplateData
+          uses: SamKirkland/FTP-Deploy-Action@3.0.0
+          with:
+            ftp-server: ftp://waws-prod-blu-165dr.ftp.azurewebsites.windows.net/site/wwwroot
+            ftp-username: WVUP-CollegeQuest\$WVUP-CollegeQuest
+            ftp-password: ${{ secrets.KdEfknzK2MaTbvMMA9kqAvroWdqW70XHd9Hlpw5LkbSX7Sjo96x8zfWA1TL0 }}
+            local-dir: Build/TemplateData/
+
+    - name: FTP-Deploy-Html
+          uses: SamKirkland/FTP-Deploy-Action@3.0.0
+          with:
+            ftp-server: ftp://waws-prod-blu-165dr.ftp.azurewebsites.windows.net/site/wwwroot
+            ftp-username: WVUP-CollegeQuest\$WVUP-CollegeQuest
+            ftp-password: ${{ secrets.KdEfknzK2MaTbvMMA9kqAvroWdqW70XHd9Hlpw5LkbSX7Sjo96x8zfWA1TL0 }}
+            local-dir: Build/index.html
