@@ -21,7 +21,7 @@ jobs:
         ftp-password: ${{ secrets.KdEfknzK2MaTbvMMA9kqAvroWdqW70XHd9Hlpw5LkbSX7Sjo96x8zfWA1TL0 }}
         local-dir: Build/Build/
 
-    - name: FTP-Deploy-TemplateData
+    - name: FTP-Deploy-Action
           uses: SamKirkland/FTP-Deploy-Action@3.0.0
           with:
             ftp-server: ftp://waws-prod-blu-165dr.ftp.azurewebsites.windows.net/site/wwwroot
@@ -29,7 +29,7 @@ jobs:
             ftp-password: ${{ secrets.KdEfknzK2MaTbvMMA9kqAvroWdqW70XHd9Hlpw5LkbSX7Sjo96x8zfWA1TL0 }}
             local-dir: Build/TemplateData/
 
-    - name: FTP-Deploy-Html
+    - name: FTP-Deploy-Action
           uses: SamKirkland/FTP-Deploy-Action@3.0.0
           with:
             ftp-server: ftp://waws-prod-blu-165dr.ftp.azurewebsites.windows.net/site/wwwroot
