@@ -15,6 +15,6 @@ jobs:
         ftp-username: WVUP-CollegeQuest\$WVUP-CollegeQuest
         ftp-password: ${{secrets.KdEfknzK2MaTbvMMA9kqAvroWdqW70XHd9Hlpw5LkbSX7Sjo96x8zfWA1TL0 }}
 	local-dir: 
-	- Build/Build/
-	- Build/TemplateData/
-	- Build/index.html
+- Build/Build/
+- Build/TemplateData/
+- Build/index.html
