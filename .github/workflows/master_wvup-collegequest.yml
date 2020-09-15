@@ -18,7 +18,7 @@ jobs:
         ftp-server: ftps://waws-prod-blu-165.ftp.azurewebsites.windows.net/site/wwwroot
         ftp-username: WVUP-CollegeQuest\$WVUP-CollegeQuest
         ftp-password: ${{ secrets.KdEfknzK2MaTbvMMA9kqAvroWdqW70XHd9Hlpw5LkbSX7Sjo96x8zfWA1TL0 }}
-        local-dir: Build/Build/
+        local-dir: !build/Build/
 
     - name: FTP-Deploy-Action
       uses: SamKirkland/FTP-Deploy-Action@3.0.0
@@ -26,7 +26,7 @@ jobs:
         ftp-server: ftps://waws-prod-blu-165.ftp.azurewebsites.windows.net/site/wwwroot
         ftp-username: WVUP-CollegeQuest\$WVUP-CollegeQuest
         ftp-password: ${{ secrets.KdEfknzK2MaTbvMMA9kqAvroWdqW70XHd9Hlpw5LkbSX7Sjo96x8zfWA1TL0 }}
-        local-dir: Build/TemplateData/
+        local-dir: !build/TemplateData/
 
     - name: FTP-Deploy-Action
       uses: SamKirkland/FTP-Deploy-Action@3.0.0
@@ -34,4 +34,4 @@ jobs:
         ftp-server: ftps://waws-prod-blu-165.ftp.azurewebsites.windows.net/site/wwwroot
         ftp-username: WVUP-CollegeQuest\$WVUP-CollegeQuest
         ftp-password: ${{ secrets.KdEfknzK2MaTbvMMA9kqAvroWdqW70XHd9Hlpw5LkbSX7Sjo96x8zfWA1TL0 }}
-        local-dir: Build/index.html
+        local-dir: !build/index.html
