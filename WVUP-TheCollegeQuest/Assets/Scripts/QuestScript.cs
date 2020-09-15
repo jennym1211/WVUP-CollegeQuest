@@ -98,8 +98,8 @@ public class QuestScript : MonoBehaviour
         string QString1 = "You must head to Student Services to learn the process of getting admitted.";
         string QString2 = "You must head to Student Services, and learn about the ins and outs of financial aid!";
 
-        Quest AdmissionQuest = new Quest("The Road To Admissions", QString1);
-        Quest FAQuest = new Quest("The Search for Financial Aid", QString2);
+        Quest AdmissionQuest = new Quest("The Road To Admissions", QString1, 200);
+        Quest FAQuest = new Quest("The Search for Financial Aid", QString2, 200);
         QuestList.Add(AdmissionQuest);
         QuestList.Add(FAQuest);
     }

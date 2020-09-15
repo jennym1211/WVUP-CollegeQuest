@@ -10,6 +10,7 @@ using UnityEngine.UI;
 public class Player : MonoBehaviour
 {
     public static Player instance;
+    public GameObject character;
     public float speed;
     Animator anim;
     public SpriteRenderer legs;
@@ -50,10 +51,19 @@ public class Player : MonoBehaviour
 
     }
 
+    private int expAwarded = 0;
+
+    public int EXPAwarded
+    {
+        get { return PlayerPrefs.GetInt(expAwarded.ToString()); }
+        set { PlayerPrefs.SetInt(expAwarded.ToString(), value); }
+    }
+
+
    void Awake()
     {
 
-       
+     
 
         if(instance == null)
         {
@@ -63,7 +73,9 @@ public class Player : MonoBehaviour
       
         else
         {
+
             Destroy(this);
+            Destroy(character);
         }
      
         
@@ -95,11 +107,20 @@ public class Player : MonoBehaviour
             anim.SetBool("isWalking", true);
             Debug.Log("Player walking.");
         }
+        else if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("CharacterCreation"))
+        {
+            Debug.Log("Character froze during character creation scene");
+            anim.SetBool("isWalking", false);
+
+        }
         else
         {
             anim.SetBool("isWalking", false);
             Debug.Log("Player stopped walking.");
         }
+
+
+      
 
 
     }

@@ -8,12 +8,20 @@ public class SceneManagement : MonoBehaviour
     // Start is called before the first frame update
 
     protected Scene sceneName;
-    string previousScene;
+    string currentScene;
+    protected int sceneFALoadIncrement = 0;
     private Player player;
+    private GameObject character;
+    private Quest currentQuest;
+    private string previousScene;
+    private List<string> sceneHistory = new List<string>();
    
     public void SceneTransition(string sceneName)
     {
-        previousScene = SceneManager.GetActiveScene().name;
+        currentScene = SceneManager.GetActiveScene().name;
+        sceneHistory.Add(currentScene);
+        sceneHistory.Add(sceneName);
+
         SceneManager.LoadScene(sceneName);
         Debug.Log("Transitioning scenes...");
        
@@ -21,7 +29,7 @@ public class SceneManagement : MonoBehaviour
 
    public void Start()
     {
-        previousScene = SceneManager.GetActiveScene().name;
+       // previousScene = SceneManager.GetActiveScene().name;
         SetPosition();
     }
 
@@ -30,7 +38,14 @@ public class SceneManagement : MonoBehaviour
     public void LoadPreviousScene()
     {
        
-        SceneManager.LoadScene(previousScene);
+        if(sceneHistory.Count >= 2)
+        {
+           
+            sceneHistory.RemoveAt(sceneHistory.Count - 1);
+            SceneManager.LoadScene(sceneHistory[sceneHistory.Count - 1]);
+        }
+        //SceneManager.LoadScene(previousScene);
+       
     }
 
     public void SetPosition()
@@ -42,6 +57,7 @@ public class SceneManagement : MonoBehaviour
         {
             Debug.Log("Setting player size while in creation mode...");
             player.transform.localScale = new Vector2(2f, 2f);
+          
         }
        else if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("CareerServices"))
         {
@@ -95,9 +111,20 @@ public class SceneManagement : MonoBehaviour
 
         else if(SceneManager.GetActiveScene() == SceneManager.GetSceneByName("MainMenu"))
         {
-            Destroy(player); //make sure this d
+            character = GameObject.FindGameObjectWithTag("Player");
+            Destroy(character);
         }
 
+        else if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("FinancialAid"))
+        {
+            sceneFALoadIncrement += 1;
+            if(currentQuest.QuestTitle == "FAQuest")
+            {
+                currentQuest.IsCompleted = true;
+                player.EXPAwarded += currentQuest.EXP;
+            }
+            
+        }
 
 
         else

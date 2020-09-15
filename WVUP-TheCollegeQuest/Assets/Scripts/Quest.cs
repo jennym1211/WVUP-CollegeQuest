@@ -23,13 +23,19 @@ public class Quest : MonoBehaviour
         get;
         set;
     }
+
+    public int EXP
+    {
+        get;
+        set;
+    }
     
-    public Quest(String NewQuestTitle, String NewQuestInfo)
+    public Quest(String NewQuestTitle, String NewQuestInfo, int newEXP)
     {
         IsCompleted = false;
         QuestInfo = NewQuestInfo;
         QuestTitle = NewQuestTitle;
-
+        EXP = newEXP;
 
 
     }
