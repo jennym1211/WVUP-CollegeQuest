@@ -34,5 +34,5 @@ jobs:
       with:
         ftp-server: ftps://waws-prod-blu-165.ftp.azurewebsites.windows.net/site/wwwroot
         ftp-username: WVUP-CollegeQuest\$WVUP-CollegeQuest
-        ftp-password: secrets.FTP_PASSWORD
+        ftp-password: ${{ secrets.FTP_PASSWORD }}
         local-dir: WVUP-TheCollegeQuest/Build/index.html
