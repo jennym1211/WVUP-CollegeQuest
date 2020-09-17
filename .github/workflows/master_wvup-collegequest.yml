@@ -1,5 +1,5 @@
 on: push
-name: Build and Publish Front End Framework Website
+name: Push Unity Build to Azure
 jobs:
   FTP-Deploy-Action:
     name: FTP-Deploy-Action
@@ -18,21 +18,4 @@ jobs:
         ftp-server: ftps://waws-prod-blu-165.ftp.azurewebsites.windows.net/site/wwwroot
         ftp-username: WVUP-CollegeQuest\$WVUP-CollegeQuest
         ftp-password: KdEfknzK2MaTbvMMA9kqAvroWdqW70XHd9Hlpw5LkbSX7Sjo96x8zfWA1TL0
-        local-dir: WVUP-TheCollegeQuest/Build/Build
-
-    - name: FTP-Deploy-Action
-      uses: SamKirkland/FTP-Deploy-Action@3.0.0
-      with:
-        ftp-server: ftps://waws-prod-blu-165.ftp.azurewebsites.windows.net/site/wwwroot
-        ftp-username: WVUP-CollegeQuest\$WVUP-CollegeQuest
-        ftp-password: KdEfknzK2MaTbvMMA9kqAvroWdqW70XHd9Hlpw5LkbSX7Sjo96x8zfWA1TL0
-        local-dir: WVUP-TheCollegeQuest/Build/TemplateData
-
-
-    - name: FTP-Deploy-Action
-      uses: SamKirkland/FTP-Deploy-Action@3.0.0
-      with:
-        ftp-server: ftps://waws-prod-blu-165.ftp.azurewebsites.windows.net/site/wwwroot
-        ftp-username: WVUP-CollegeQuest\$WVUP-CollegeQuest
-        ftp-password: KdEfknzK2MaTbvMMA9kqAvroWdqW70XHd9Hlpw5LkbSX7Sjo96x8zfWA1TL0
-        WVUP-TheCollegeQuest/Build/index.html
+        local-dir: WVUP-TheCollegeQuest/Build/
