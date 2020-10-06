@@ -57,14 +57,17 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\PanelManager.cs" />
     <Compile Include="Assets\Scripts\DegreeScripts\BAPSScript.cs" />
+    <Compile Include="Assets\Scripts\Login.cs" />
     <Compile Include="Assets\Scripts\DegreeScripts\EducationDegreeSelection.cs" />
     <Compile Include="Assets\Scripts\SaveData.cs" />
     <Compile Include="Assets\Scripts\AppearanceScripts\ChangeAppearance.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\Scripts\QuestScript.cs" />
+    <Compile Include="Assets\Scripts\Main.cs" />
     <Compile Include="Assets\Scripts\CameraScript.cs" />
     <Compile Include="Assets\Scripts\SceneTrigger.cs" />
     <Compile Include="Assets\Scripts\ShowSpeechBubble.cs" />
+    <Compile Include="Assets\Scripts\Web.cs" />
     <Compile Include="Assets\Scripts\ChoiceScript.cs" />
     <Compile Include="Assets\Scripts\DegreeScripts\STEMDegreeSelection.cs" />
     <Compile Include="Assets\Scripts\AppearanceScripts\ChangePartColor.cs" />
@@ -73,6 +76,7 @@
     <Compile Include="Assets\Scripts\SceneManagement.cs" />
     <Compile Include="Assets\Scripts\WebURLScript.cs" />
     <Compile Include="Assets\Scripts\AdmissionsChoiceScript.cs" />
+    <Compile Include="Assets\Scripts\Registration.cs" />
     <Compile Include="Assets\Scripts\GameUtilities.cs" />
     <Compile Include="Assets\Scripts\DegreeScripts\NursingDegreeSelection.cs" />
     <Compile Include="Assets\Scripts\MusicScript.cs" />
@@ -81,6 +85,7 @@
     <Compile Include="Assets\Scripts\DegreeScripts\HFASSScript.cs" />
     <Compile Include="Assets\Scripts\Quest.cs" />
     <Compile Include="Assets\Scripts\Dialog.cs" />
+    <Compile Include="Assets\Scripts\SceneChange.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
