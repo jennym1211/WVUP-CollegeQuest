@@ -85,7 +85,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 128
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -143,12 +143,12 @@ TextureImporter:
       name: hairs_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 500
-        width: 129
-        height: 180
+        x: 19
+        y: 513
+        width: 96
+        height: 150
       alignment: 9
-      pivot: {x: 0.47672653, y: 0.5533749}
+      pivot: {x: 0.44908956, y: 0.547985}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -167,9 +167,9 @@ TextureImporter:
         x: 138
         y: 506
         width: 136
-        height: 163
+        height: 161
       alignment: 9
-      pivot: {x: 0.47954437, y: 0.28760552}
+      pivot: {x: 0.494409, y: 0.35038766}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -185,12 +185,12 @@ TextureImporter:
       name: hairs_2
       rect:
         serializedVersion: 2
-        x: 283
-        y: 522
-        width: 129
-        height: 150
+        x: 304
+        y: 507
+        width: 87
+        height: 164
       alignment: 9
-      pivot: {x: 0.50000024, y: 0.41993937}
+      pivot: {x: 0.51845926, y: 0.49093628}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -206,12 +206,12 @@ TextureImporter:
       name: hairs_3
       rect:
         serializedVersion: 2
-        x: 422
+        x: 432
         y: 520
-        width: 153
+        width: 96
         height: 155
       alignment: 9
-      pivot: {x: 0.5274722, y: 0.4496393}
+      pivot: {x: 0.5024538, y: 0.43759882}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -227,12 +227,12 @@ TextureImporter:
       name: hairs_4
       rect:
         serializedVersion: 2
-        x: 1
+        x: 11
         y: 357
-        width: 120
-        height: 124
+        width: 116
+        height: 132
       alignment: 9
-      pivot: {x: 0.5200154, y: 0.27724925}
+      pivot: {x: 0.52872914, y: 0.36913902}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -248,12 +248,12 @@ TextureImporter:
       name: hairs_5
       rect:
         serializedVersion: 2
-        x: 135
+        x: 168
         y: 352
-        width: 133
-        height: 135
+        width: 110
+        height: 144
       alignment: 9
-      pivot: {x: 0.50451523, y: 0.31052878}
+      pivot: {x: 0.51408345, y: 0.5007602}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -269,12 +269,12 @@ TextureImporter:
       name: hairs_6
       rect:
         serializedVersion: 2
-        x: 289
-        y: 340
-        width: 122
-        height: 172
+        x: 319
+        y: 381
+        width: 82
+        height: 119
       alignment: 9
-      pivot: {x: 0.50984395, y: 0.47556305}
+      pivot: {x: 0.49650759, y: 0.4693393}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -290,12 +290,12 @@ TextureImporter:
       name: hairs_7
       rect:
         serializedVersion: 2
-        x: 416
+        x: 431
         y: 340
-        width: 145
+        width: 130
         height: 171
       alignment: 9
-      pivot: {x: 0.5124238, y: 0.4894659}
+      pivot: {x: 0.41040275, y: 0.63742745}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -311,12 +311,12 @@ TextureImporter:
       name: hairs_8
       rect:
         serializedVersion: 2
-        x: 11
-        y: 113
-        width: 145
-        height: 207
+        x: 206
+        y: 137
+        width: 171
+        height: 177
       alignment: 9
-      pivot: {x: 0.5000001, y: 0.5986265}
+      pivot: {x: 0.49842146, y: 0.54177123}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -324,48 +324,6 @@ TextureImporter:
       bones: []
       spriteID: 06bc2170d867421a0800000000000000
       internalID: -6835207986360431776
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: hairs_9
-      rect:
-        serializedVersion: 2
-        x: 162
-        y: 67
-        width: 187
-        height: 255
-      alignment: 9
-      pivot: {x: 0.5064222, y: 0.6647436}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0509597574a245d30800000000000000
-      internalID: 4419203620257763408
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: hairs_10
-      rect:
-        serializedVersion: 2
-        x: 363
-        y: 62
-        width: 135
-        height: 233
-      alignment: 9
-      pivot: {x: 0.50000066, y: 0.66235614}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 65d830efbb2f81500800000000000000
-      internalID: 367310258865147222
       vertices: []
       indices: 
       edges: []

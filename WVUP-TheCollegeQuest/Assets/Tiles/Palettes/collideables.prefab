@@ -40,7 +40,7 @@ Grid:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1383596472616691250}
   m_Enabled: 1
-  m_CellSize: {x: 3.125, y: 7.09375, z: 0}
+  m_CellSize: {x: 20, y: 18.88, z: 0}
   m_CellGap: {x: 0, y: 0, z: 0}
   m_CellLayout: 0
   m_CellSwizzle: 0
@@ -90,6 +90,15 @@ Tilemap:
       serializedVersion: 2
       m_TileIndex: 5
       m_TileSpriteIndex: 7
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: 3, y: -5, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 16
+      m_TileSpriteIndex: 16
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -263,6 +272,8 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 08ac4f8a068c2ab44a98c7712726a986, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 6312ccf740dc5454f8659b463669eb01, type: 2}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: 9b8d68a1b7f4e6d4ba85e8a60b8b421d, type: 2}
   m_TileSpriteArray:
   - m_RefCount: 1
     m_Data: {fileID: 21300000, guid: a28e3ea6436914c4bb3b270251c0fe58, type: 3}
@@ -296,8 +307,10 @@ Tilemap:
     m_Data: {fileID: 21300000, guid: 294d8b7d9bb6a8b4ea7fbbce7a577564, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 21300000, guid: 3f26e30c413a51144bbf3290bfb0d125, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: 21300000, guid: 3fd994ed3da44f246a069d6c6d06495d, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 16
+  - m_RefCount: 17
     m_Data:
       e00: 1
       e01: 0
@@ -316,7 +329,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 16
+  - m_RefCount: 17
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -390,7 +403,7 @@ TilemapRenderer:
   m_Mode: 0
   m_DetectChunkCullingBounds: 0
   m_MaskInteraction: 0
---- !u!114 &5162851160736774021
+--- !u!114 &2481149980494204151
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
