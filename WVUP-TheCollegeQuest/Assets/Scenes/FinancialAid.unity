@@ -1933,15 +1933,15 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2110958490}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: OpenFAFSAURL
-        m_Mode: 1
+        m_TargetAssemblyTypeName: WebURLScript, Assembly-CSharp
+        m_MethodName: OpenURL
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: https://studentaid.ed.gov/sa/fafsa
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1033106171
@@ -3699,8 +3699,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Scholarships and grants are a type of financial aid you do not have to
-    pay back.\r \nHowever, you might have to fulfill criteria as you progress\r\n
-    to make sure you keep it during your time at school."
+    pay back.\r \nHowever, you might have to fulfill criteria as you progress\r\nto
+    make sure you keep it during your time at school."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}

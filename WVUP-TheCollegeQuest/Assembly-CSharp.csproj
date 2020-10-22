@@ -72,6 +72,7 @@
     <Compile Include="Assets\Scripts\DegreeScripts\STEMDegreeSelection.cs" />
     <Compile Include="Assets\Scripts\AppearanceScripts\ChangePartColor.cs" />
     <Compile Include="Assets\Scripts\InteractionScript.cs" />
+    <Compile Include="Assets\Scripts\SceneChange.cs" />
     <Compile Include="Assets\Scripts\CheckboxScript.cs" />
     <Compile Include="Assets\Scripts\SceneManagement.cs" />
     <Compile Include="Assets\Scripts\WebURLScript.cs" />
@@ -85,7 +86,6 @@
     <Compile Include="Assets\Scripts\DegreeScripts\HFASSScript.cs" />
     <Compile Include="Assets\Scripts\Quest.cs" />
     <Compile Include="Assets\Scripts\Dialog.cs" />
-    <Compile Include="Assets\Scripts\SceneChange.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />

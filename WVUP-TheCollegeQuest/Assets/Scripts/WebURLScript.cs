@@ -1,60 +1,35 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.InteropServices;
 using UnityEngine;
 
 public class WebURLScript : MonoBehaviour
 {
-    // Start is called before the first frame update
-    private void Start()
+    [DllImport("__Internal")]
+    private static extern void OpenNewTab(string url);
+
+    public void openURL(string url)
     {
+#if !UNITY_EDITOR && UNITY_WEBGL
+             OpenNewTab(url);
+#endif
     }
 
-    public void OpenEMSICCURL()
-    {
-        Application.ExternalEval("window.open('https://wvup.emsicc.com/');");
-    }
-
-    public void OpenCNURL()
-    {
-        Application.ExternalEval("window.open('https://www.collegecentral.com/wvup/');");
-    }
+    /**
+     *
+     * Uses javascript plugins to open links in a new tab.
+     *
+     */
 
     public void OpenURL(string url)
     {
-        Application.ExternalEval("window.open('" + url + "');");
+        openURL(url);
+
+        //   Application.ExternalEval("window.open('" + url + "');");
     }
 
-    public void OpenLIURL()
-    {
-        Application.ExternalEval("window.open('https://www.linkedin.com/');");
-    }
-
-    public void OpenFAFSAURL()
-    {
-        Application.ExternalEval("window.open('https://studentaid.ed.gov/sa/fafsa');");
-    }
-
-    public void OpenOLSISURL()
-    {
-        Application.ExternalEval("window.open('https://rand.wvnet.edu:9920/WVUPPROD/twbkwbis.P_GenMenu?name=homepage');");
-    }
-
-    public void OpenTranscriptURL()
-    {
-        Application.ExternalEval("window.open(' https://www.wvup.edu/future-students/admissions/admissions-requirements/');");
-    }
-
-    public void OpenApplicationURL()
-    {
-        Application.ExternalEval("window.open('https://rand.wvnet.edu:9920/WVUPPROD/bwskalog.P_DispChoicesStu');");
-    }
-
-    public void OpenHistoryURL()
-    {
-        Application.ExternalEval("window.open('https://www.wvup.edu/about/history/');");
-    }
-
-    private void Update()
-    {
-    }
+    //public void OpenEMSICCURL()
+    //{
+    //    Application.ExternalEval("window.open('https://wvup.emsicc.com/');");
+    //}
 }

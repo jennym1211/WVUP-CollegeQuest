@@ -75,6 +75,11 @@ public class SceneTrigger : MonoBehaviour
             Debug.Log("Entering Caperton, setting position.");
             player.transform.position = new Vector2(-13.79f, 0.8f);
         }
+        else if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("InsideCaperton") && previousScene == "C127")
+        {
+            Debug.Log("Entering InsideHallway after exiting outside, setting position.");
+            player.transform.position = new Vector2(-4.949746f, -25.52972f);
+        }
         else if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("C127"))
         {
             Debug.Log("Entering C127, setting position.");

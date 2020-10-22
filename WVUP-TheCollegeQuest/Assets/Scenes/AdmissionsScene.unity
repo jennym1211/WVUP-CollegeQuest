@@ -779,9 +779,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1461837603}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: OpenTranscriptURL
-        m_Mode: 1
+        m_TargetAssemblyTypeName: WebURLScript, Assembly-CSharp
+        m_MethodName: OpenURL
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1070,9 +1070,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1461837603}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: OpenFAFSAURL
-        m_Mode: 1
+        m_TargetAssemblyTypeName: WebURLScript, Assembly-CSharp
+        m_MethodName: OpenURL
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1550,9 +1550,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1461837603}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: OpenOLSISURL
-        m_Mode: 1
+        m_TargetAssemblyTypeName: WebURLScript, Assembly-CSharp
+        m_MethodName: OpenURL
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2090,6 +2090,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speechBubble: {fileID: 0}
+  sprite: {fileID: 0}
 --- !u!114 &1594073780
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2320,15 +2321,15 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1461837603}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: OpenApplicationURL
-        m_Mode: 1
+        m_TargetAssemblyTypeName: WebURLScript, Assembly-CSharp
+        m_MethodName: OpenURL
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: https://studentaid.ed.gov/sa/fafsa
+          m_StringArgument: https://rand.wvnet.edu:9920/WVUPPROD/bwskalog.P_DispChoicesStu
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1665990345
