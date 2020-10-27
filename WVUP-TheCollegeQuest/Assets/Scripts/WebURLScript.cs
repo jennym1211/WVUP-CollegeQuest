@@ -20,7 +20,6 @@ public class WebURLScript : MonoBehaviour
      * Uses javascript plugins to open links in a new tab.
      *
      */
-
     public void OpenURL(string url)
     {
         openURL(url);
@@ -28,8 +27,5 @@ public class WebURLScript : MonoBehaviour
         //   Application.ExternalEval("window.open('" + url + "');");
     }
 
-    //public void OpenEMSICCURL()
-    //{
-    //    Application.ExternalEval("window.open('https://wvup.emsicc.com/');");
-    //}
+
 }
