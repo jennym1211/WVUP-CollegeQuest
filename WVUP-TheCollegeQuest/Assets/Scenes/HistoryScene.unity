@@ -454,14 +454,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "WVU Parkersburg was founded in 1961 as the Parkersburg Branch of West
-    Virginia University. In 1971, it became Parkersburg Community College, one of
-    the state\u2019s first comprehensive community colleges. Three years later, the
-    college established its Jackson County Center in Ripley. The institution was
-    renamed West Virginia University at Parkersburg in 1989 and rejoined WVU as a
-    regional campus. State legislation created a statewide network of independently-accredited
-    community and technical colleges in 2008. This allowed WVU Parkersburg to become
-    an independent institution while maintaining affiliation with WVU."
+  m_Text: 
 --- !u!222 &758098966
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -470,6 +463,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 758098963}
   m_CullTransparentMesh: 0
+--- !u!1 &859615711
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 859615713}
+  - component: {fileID: 859615712}
+  m_Layer: 0
+  m_Name: DBText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &859615712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 859615711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fce5c32c43cd1e4da1b47f33a3be7b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textObject: {fileID: 758098965}
+  phpLink: http://localhost/CollegeQuest/GetHistoryData.php
+--- !u!4 &859615713
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 859615711}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.2234502, y: 1.0418825, z: 48560.926}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &888717242
 GameObject:
   m_ObjectHideFlags: 0

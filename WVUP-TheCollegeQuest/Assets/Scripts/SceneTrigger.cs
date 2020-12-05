@@ -1,16 +1,57 @@
-﻿using System.Collections;
+﻿// ***********************************************************************
+// Assembly         : Assembly-CSharp
+// Author           : Jennifer
+// Created          : 08-10-2020
+//
+// Last Modified By : Jennifer
+// Last Modified On : 10-20-2020
+// ***********************************************************************
+// <copyright file="SceneTrigger.cs" company="">
+//     Copyright (c) . All rights reserved.
+// </copyright>
+// <summary></summary>
+// ***********************************************************************
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+/// <summary>
+/// Class SceneTrigger.
+/// Implements the <see cref="UnityEngine.MonoBehaviour" />
+/// </summary>
+/// <seealso cref="UnityEngine.MonoBehaviour" />
 public class SceneTrigger : MonoBehaviour
 {
+    /// <summary>
+    /// The level
+    /// </summary>
     public string level;
+
+    /// <summary>
+    /// The scene
+    /// </summary>
     protected SceneManagement scene;
+
+    /// <summary>
+    /// The player
+    /// </summary>
     private Player player;
+
+    /// <summary>
+    /// The previous scene
+    /// </summary>
     private string previousScene;
+
+    /// <summary>
+    /// The start position
+    /// </summary>
     private Transform startPos;
 
+    /// <summary>
+    /// Called when [trigger enter2 d].
+    /// </summary>
+    /// <param name="collision">The collision.</param>
     public void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
@@ -20,6 +61,9 @@ public class SceneTrigger : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Sets the position.
+    /// </summary>
     public void SetPosition()
     {
         player = FindObjectOfType<Player>();

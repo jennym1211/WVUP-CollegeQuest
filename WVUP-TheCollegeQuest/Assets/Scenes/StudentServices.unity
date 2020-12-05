@@ -498,6 +498,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speechBubble: {fileID: 586385543}
+  sprite: {fileID: 0}
 --- !u!61 &417045438
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -754,6 +755,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speechBubble: {fileID: 1320605054}
+  sprite: {fileID: 0}
 --- !u!114 &632516179
 MonoBehaviour:
   m_ObjectHideFlags: 0

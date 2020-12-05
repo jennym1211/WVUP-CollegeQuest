@@ -1,21 +1,74 @@
-﻿using System.Collections;
+﻿// ***********************************************************************
+// Assembly         : Assembly-CSharp
+// Author           : Jennifer
+// Created          : 08-10-2020
+//
+// Last Modified By : Jennifer
+// Last Modified On : 10-20-2020
+// ***********************************************************************
+// <copyright file="SceneManagement.cs" company="">
+//     Copyright (c) . All rights reserved.
+// </copyright>
+// <summary></summary>
+// ***********************************************************************
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+/// <summary>
+/// Class SceneManagement.
+/// Implements the <see cref="UnityEngine.MonoBehaviour" />
+/// </summary>
+/// <seealso cref="UnityEngine.MonoBehaviour" />
 public class SceneManagement : MonoBehaviour
 {
     // Start is called before the first frame update
 
+    /// <summary>
+    /// The scene name
+    /// </summary>
     protected Scene sceneName;
+
+    /// <summary>
+    /// The current scene
+    /// </summary>
     private string currentScene;
+
+    /// <summary>
+    /// The scene fa load increment
+    /// </summary>
     protected int sceneFALoadIncrement = 0;
+
+    /// <summary>
+    /// The player
+    /// </summary>
     private Player player;
+
+    /// <summary>
+    /// The character
+    /// </summary>
     private GameObject character;
+
+    /// <summary>
+    /// The current quest
+    /// </summary>
     private Quest currentQuest;
+
+    /// <summary>
+    /// The previous scene
+    /// </summary>
     private string previousScene;
+
+    /// <summary>
+    /// The scene history
+    /// </summary>
     private List<string> sceneHistory = new List<string>();
 
+    /// <summary>
+    /// Scenes the transition.
+    /// </summary>
+    /// <param name="sceneName">Name of the scene.</param>
     public void SceneTransition(string sceneName)
     {
         currentScene = SceneManager.GetActiveScene().name;
@@ -27,17 +80,26 @@ public class SceneManagement : MonoBehaviour
         SetPosition();
     }
 
+    /// <summary>
+    /// Awakes this instance.
+    /// </summary>
     protected void Awake()
     {
         SetPosition();
     }
 
+    /// <summary>
+    /// Starts this instance.
+    /// </summary>
     public void Start()
     {
         // previousScene = SceneManager.GetActiveScene().name;
         SetPosition();
     }
 
+    /// <summary>
+    /// Loads the previous scene.
+    /// </summary>
     public void LoadPreviousScene()
     {
         if (sceneHistory.Count >= 2)
@@ -48,6 +110,9 @@ public class SceneManagement : MonoBehaviour
         //SceneManager.LoadScene(previousScene);
     }
 
+    /// <summary>
+    /// Sets the position.
+    /// </summary>
     public void SetPosition()
     {
         player = FindObjectOfType<Player>();
