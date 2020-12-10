@@ -60,6 +60,8 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -239,6 +241,8 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -295,8 +299,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7177632109002330367}
-        m_MethodName: SceneTransition
+      - m_Target: {fileID: 5423727930670058741}
+        m_TargetAssemblyTypeName: SceneTrigger, Assembly-CSharp
+        m_MethodName: LoadScene
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -315,7 +320,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7229859875263256288}
-  - component: {fileID: 7177632109002330367}
+  - component: {fileID: 5423727930670058741}
   m_Layer: 0
   m_Name: KISSceneManager
   m_TagString: Untagged
@@ -337,7 +342,7 @@ Transform:
   m_Father: {fileID: 1450422561876797489}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7177632109002330367
+--- !u!114 &5423727930670058741
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -346,6 +351,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6439655379252862462}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44291fba7736a794c91813fdefd498d1, type: 3}
+  m_Script: {fileID: 11500000, guid: 179b33149d20bd14296cfce829c2dc68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  level: 

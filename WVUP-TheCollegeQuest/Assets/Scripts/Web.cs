@@ -15,6 +15,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
+using UnityEngine.SceneManagement;
 
 /// <summary>
 /// Class Web.
@@ -101,6 +102,14 @@ public class Web : MonoBehaviour
             }
             else
             {
+                if (www.downloadHandler.text.Contains("success"))
+                {
+                    SceneManager.LoadScene("CharacterCreation");
+                }
+                else if (www.downloadHandler.text == "failure")
+                {
+                }
+
                 Debug.Log(www.downloadHandler.text);
             }
         }

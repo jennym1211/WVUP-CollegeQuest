@@ -9,7 +9,7 @@
 // <copyright file="Quest.cs" company="">
 //     Copyright (c) . All rights reserved.
 // </copyright>
-// <summary></summary>
+// <summary>Quests are what the user is supposed to fulfill to progress throughout their college quest.</summary>
 // ***********************************************************************
 using System.Collections;
 using System.Collections.Generic;
@@ -23,7 +23,7 @@ using UnityEngine.UI;
 /// </summary>
 /// <seealso cref="UnityEngine.MonoBehaviour" />
 [Serializable]
-public class Quest : MonoBehaviour
+public class Quest
 {
     /// <summary>
     /// Gets or sets the quest information.

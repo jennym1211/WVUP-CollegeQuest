@@ -1853,8 +1853,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 912962345}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: SceneTransition
+        m_TargetAssemblyTypeName: SceneTrigger, Assembly-CSharp
+        m_MethodName: LoadScene
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2536,7 +2536,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Option A
+  m_Text: Undecided
 --- !u!222 &562488001
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3527,9 +3527,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 912962344}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44291fba7736a794c91813fdefd498d1, type: 3}
+  m_Script: {fileID: 11500000, guid: 179b33149d20bd14296cfce829c2dc68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  level: 
 --- !u!4 &912962346
 Transform:
   m_ObjectHideFlags: 0
@@ -5733,11 +5734,11 @@ MonoBehaviour:
   m_Value: 0
   m_Options:
     m_Options:
-    - m_Text: Option A
+    - m_Text: Undecided
       m_Image: {fileID: 0}
-    - m_Text: Option B
+    - m_Text: Computer Info Technology
       m_Image: {fileID: 0}
-    - m_Text: Option C
+    - m_Text: Computer Science
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:

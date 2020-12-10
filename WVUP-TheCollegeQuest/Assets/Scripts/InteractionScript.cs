@@ -52,7 +52,7 @@ public class InteractionScript : MonoBehaviour
     /// <param name="col">The col.</param>
     public void OnCollisionEnter(Collision col)
     {
-        if (col.gameObject.tag == "FAOfficerSprite")
+        if (col.gameObject.CompareTag("FAOfficerSprite"))
         {
             {
                 Debug.Log("Interaction detected");

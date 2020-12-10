@@ -30,9 +30,6 @@ EditorBuildSettings:
     path: Assets/Scenes/BusinessOffice.unity
     guid: d4b0d14010e64634fa43f5d757556d63
   - enabled: 1
-    path: Assets/Scenes/CapertonScene.unity
-    guid: eb4d437e316dbf1409e7273ca10d87c8
-  - enabled: 1
     path: Assets/Scenes/ComputerScience.unity
     guid: 3f0707d048b2b254183cf59098fa8fed
   - enabled: 1

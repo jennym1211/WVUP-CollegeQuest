@@ -13,6 +13,7 @@
 // ***********************************************************************
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.UI;
@@ -27,7 +28,7 @@ public class WWWDialogueScript : MonoBehaviour
     /// <summary>
     /// The text object
     /// </summary>
-    public Text textObject;
+    public TextMeshProUGUI textObject;
 
     /// <summary>
     /// The PHP link
@@ -39,8 +40,13 @@ public class WWWDialogueScript : MonoBehaviour
     /// </summary>
     private void Start()
     {
-        StartCoroutine(GetDialogueData(phpLink));
+        StartCoroutine(GetDialogueData(phpLink, textObject));
         //StartCoroutine(Login("testplayer1", "password"));
+    }
+
+    void Update()
+    {
+        StartCoroutine(GetDialogueData(phpLink, textObject));
     }
 
     /// <summary>
@@ -48,11 +54,11 @@ public class WWWDialogueScript : MonoBehaviour
     /// </summary>
     /// <param name="phpLink">The PHP link.</param>
     /// <returns>IEnumerator.</returns>
-    public IEnumerator GetDialogueData(string phpLink)
+    public IEnumerator GetDialogueData(string phpLink, TextMeshProUGUI textBox)
     {
         using (UnityWebRequest www = UnityWebRequest.Get(phpLink))
         {
-            yield return www.Send();
+            yield return www.SendWebRequest();
 
             if (www.isNetworkError || www.isHttpError)
             {
@@ -64,7 +70,7 @@ public class WWWDialogueScript : MonoBehaviour
 
                 byte[] results = www.downloadHandler.data;
 
-                textObject.text = www.downloadHandler.text;
+                textBox.text = www.downloadHandler.text;
             }
         }
     }
