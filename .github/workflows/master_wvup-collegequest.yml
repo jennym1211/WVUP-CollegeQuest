@@ -13,9 +13,9 @@ jobs:
       run: ls
       
     - name: FTP-Deploy-Action
-      uses: SamKirkland/FTP-Deploy-Action@4.0.0
+      uses: SamKirkland/FTP-Deploy-Action@3.0.0
       with:
-        server: ${{ secrets.AZURE_FTP_SERVER }}
-        username: ${{ secrets.AZURE_USERNAME }}
-        password: ${{ secrets.AZURE_PASSWORD }}
+        ftp-server: ${{ secrets.AZURE_FTP_SERVER }}
+        ftp-username: ${{ secrets.AZURE_USERNAME }}
+        ftp-password: ${{ secrets.AZURE_PASSWORD }}
         local-dir: WVUP-TheCollegeQuest/Build/
