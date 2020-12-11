@@ -52,12 +52,7 @@ public class SceneTrigger : MonoBehaviour
     private Scene previousScene;
 
     /// <summary>
-    /// The start position
-    /// </summary>
-    private Transform startPos;
-
-    /// <summary>
-    /// Called when [trigger enter2 d].
+    /// Called when a player collides with a certain object to transfer them to a different scene.
     /// </summary>
     /// <param name="collision">The collision.</param>
     public void OnTriggerEnter2D(Collider2D collision)
@@ -74,9 +69,6 @@ public class SceneTrigger : MonoBehaviour
         }
     }
 
-    //Call this whenever you want to load the previous scene
-    //It will remove the current scene from the history and then load the new last scene in the history
-    //It will return false if we have not moved between scenes enough to have stored a previous scene in the history
     public void PreviousScene()
     {
         if (sceneHistory.Count > 0)
@@ -94,7 +86,7 @@ public class SceneTrigger : MonoBehaviour
     }
 
     /// <summary>
-    /// Sets the position.
+    /// Sets the position of the player depending on the scene they are in.
     /// </summary>
     public void SetPosition(string level)
     {

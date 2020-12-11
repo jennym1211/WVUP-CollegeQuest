@@ -250,20 +250,4 @@ public class Player : MonoBehaviour
             rb.MovePosition(rb.position + moveVelocity * Time.fixedDeltaTime);
         }
     }
-
-    //public void Save(int SaveSlot)
-    //{
-    //    PlayerPrefs.SetString("SaveSlot_" + SaveSlot.ToString() + "_" + name, Name);
-    //    PlayerPrefs.SetString("SaveSlot_" + SaveSlot.ToString() + "_" + level, Level);
-    //    PlayerPrefs.SetString("SaveSlot_" + SaveSlot.ToString() + "_" + major, Major);
-    //    Debug.Log("Player information saved.");
-    //}
-
-    //public void Load(int SaveSlot)
-    //{
-    //    Name = PlayerPrefs.GetString("SaveSlot_" + SaveSlot.ToString() + "_" + name, Name);
-    //    Level = PlayerPrefs.GetString("SaveSlot_" + SaveSlot.ToString() + "_" + level, Level);
-    //    Major = PlayerPrefs.GetString("SaveSlot_" + SaveSlot.ToString() + "_" + major, Major);
-    //    Debug.Log("Player information loaded.");
-    //}
 }

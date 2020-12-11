@@ -18,7 +18,7 @@ using System;
 using UnityEngine.UI;
 
 /// <summary>
-/// Class Quest.
+/// The model class that represents the Quest data.
 /// Implements the <see cref="UnityEngine.MonoBehaviour" />
 /// </summary>
 /// <seealso cref="UnityEngine.MonoBehaviour" />

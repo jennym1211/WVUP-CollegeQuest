@@ -41,7 +41,6 @@ public class WWWDialogueScript : MonoBehaviour
     private void Start()
     {
         StartCoroutine(GetDialogueData(phpLink, textObject));
-        //StartCoroutine(Login("testplayer1", "password"));
     }
 
     void Update()

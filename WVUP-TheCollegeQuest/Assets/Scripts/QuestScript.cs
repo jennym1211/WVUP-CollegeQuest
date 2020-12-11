@@ -19,7 +19,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 /// <summary>
-/// Class QuestScript.
+/// Initalizes the Quest Data within the game.
 /// Implements the <see cref="UnityEngine.MonoBehaviour" />
 /// </summary>
 /// <seealso cref="UnityEngine.MonoBehaviour" />
@@ -86,7 +86,6 @@ public class QuestScript : MonoBehaviour
         CheckFinComplete();
     }
 
-    //Refactor CreateQuestButton And Delete This, this is Temporary
     /// <summary>
     /// Populates the quest buttons.
     /// </summary>
